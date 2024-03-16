@@ -133,6 +133,7 @@ end
 function HintAutoWindow:close()
    if self.win and self.win:is_valid() then
       self.win:close()
+      self.buffer:delete()
    end
    self.win = nil
 
